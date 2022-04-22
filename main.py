@@ -4,4 +4,4 @@ woorden = ("informatica", "informatiekunde", "spelletje", "aardigheidje", "schol
 import random
 r = random.randint(1,10)
 gekozenwoord = woorden[r]
-print(gekozenwoord)  
+print(gekozenwoord)
