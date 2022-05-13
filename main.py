@@ -5,4 +5,4 @@ import random
 r = random.randint(1,10)
 gekozenwoord = woorden[r]
 print(gekozenwoord) 
-print ("hoi")
+print ("hallo")
