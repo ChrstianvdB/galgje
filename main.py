@@ -4,5 +4,13 @@ woorden = ("informatica", "informatiekunde", "spelletje", "aardigheidje", "schol
 import random
 r = random.randint(1,10)
 gekozenwoord = woorden[r]
-print(gekozenwoord) 
-print ("hi")
+print(gekozenwoord)
+gekozenletter = input("kies een letter")
+streepjes = []
+for letter in gekozenwoord:
+  if gekozenletter == letter:
+    streepjes.append(gekozenletter)
+  else:
+    streepjes.append("_")
+
+print(streepjes)
