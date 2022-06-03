@@ -39,16 +39,10 @@ def beurt():
       if c=="ja":
         game()
       else:
-        print("Goodbye")
+        print("Jawel")
+        game()
           
     beurt() 
-    if aantalbeurten == 0:
-      print("GAME OVER")
-    c = input("Nog een keer spelen?")
-    if c=="ja":
-      game()
-    else:
-      print("Goodbye")
         
       
 game()
