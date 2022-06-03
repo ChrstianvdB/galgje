@@ -1,7 +1,8 @@
-print("Welkom bij Galgje!") 
-  
-woorden = ("informatica", "informatiekunde", "spelletje", "aardigheidje", "scholier", "fotografie", "waardebepaling", "specialiteit", "verzekering", "universiteit", "heesterperk")
 import random
+woorden = ("informatica", "informatiekunde", "spelletje", "aardigheidje", "scholier", "fotografie", "waardebepaling", "specialiteit", "verzekering", "universiteit", "heesterperk")
+
+print("Welkom bij Galgje!") 
+
 r = random.randint(1,10)
 gekozenwoord = woorden[r]
 print(gekozenwoord)
@@ -12,14 +13,13 @@ def beurt():
   global aantalbeurten
   print(f"Nog maar {aantalbeurten} pogingen!")
   aantalbeurten = aantalbeurten - 1
-  gekozenletter = input("kies een letter")
-  
+  gekozenletter = input("kies een letter \n")  
+  gekozenletters.append(gekozenletter)  
   streepjes = []
-  for letter in gekozenwoord:
-    if gekozenletter == letter:
-      streepjes.append(gekozenletter)
-      gekozenletters.append(gekozenletter)
-      streepjes.append(gekozenletters)
+  
+  for letter in gekozenwoord:    
+    if letter in gekozenletters:
+      streepjes.append(letter)
     else:
       streepjes.append('_')
   
@@ -27,13 +27,10 @@ def beurt():
   if aantalbeurten == 0:
     print("GAME OVER")
     c = input("Nog een keer spelen?")
-    if(c=="ja"):
-      game()
-  c = input("nog een letter?")
-  if(c=="ja"):
-    beurt()
-  else:
-    print("GAME OVER")
+    if c=="ja":
+      beurt()
+      
+  beurt() 
     
   
 beurt()
