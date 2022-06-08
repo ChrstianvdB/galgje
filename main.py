@@ -12,7 +12,6 @@ def game():
     
   r = random.randint(1,10)
   gekozenwoord = woorden[r]
-  print(gekozenwoord)
   aantalbeurten = 15  
   gekozenletters = []  
   
@@ -25,7 +24,15 @@ def beurt():
     gekozenletter = input("kies een letter \n")  
     gekozenletters.append(gekozenletter)  
     streepjes = []
-    
+    if gekozenletter ==gekozenwoord:
+      print("YOU WIN!")
+      c = input("Nog een keer spelen? \n")
+      if c=="ja":
+        game()
+      else:
+        print("Jawel")
+        game()
+      
     for letter in gekozenwoord:    
       if letter in gekozenletters:
         streepjes.append(letter)
@@ -36,21 +43,27 @@ def beurt():
     
     if aantalbeurten == 0:
       print("GAME OVER")
-      c = input("Nog een keer spelen?")
+      c = input("Nog een keer spelen? \n")
       if c=="ja":
         game()
       if c=="rick":
         print("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+        game()
       if c=="PickleRick":
         print("https://www.youtube.com/watch?v=ML5UI-0JS_Q")
+        game()
       if c=="roadhouse":
         print("https://www.youtube.com/watch?v=wqWADN0UubA")
+        game()
       if c=="fuck":
         print("https://www.youtube.com/watch?v=Rc0cQLDFncs")
+        game()
       if c=="pride":
         print("https://www.youtube.com/watch?v=03MkRR4eGNg")
+        game()
       if c=="moo":
         print("https://www.youtube.com/watch?v=ELBVeRDflV0")
+        game()
       else:
         print("Jawel")
         game()
