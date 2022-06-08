@@ -25,7 +25,7 @@ def beurt():
     gekozenletter = input("kies een letter \n")  
     gekozenletters.append(gekozenletter)  
     streepjes = []
-      
+    
     for letter in gekozenwoord:    
       if letter in gekozenletters:
         streepjes.append(letter)
@@ -39,6 +39,18 @@ def beurt():
       c = input("Nog een keer spelen?")
       if c=="ja":
         game()
+      if c=="rick":
+        print("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+      if c=="PickleRick":
+        print("https://www.youtube.com/watch?v=ML5UI-0JS_Q")
+      if c=="roadhouse":
+        print("https://www.youtube.com/watch?v=wqWADN0UubA")
+      if c=="fuck":
+        print("https://www.youtube.com/watch?v=Rc0cQLDFncs")
+      if c=="pride":
+        print("https://www.youtube.com/watch?v=03MkRR4eGNg")
+      if c=="moo":
+        print("https://www.youtube.com/watch?v=ELBVeRDflV0")
       else:
         print("Jawel")
         game()
