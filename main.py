@@ -32,7 +32,8 @@ def beurt():
       else:
         streepjes.append('_')
       
-    print(streepjes)
+    print(" ".join(streepjes))
+    
     if aantalbeurten == 0:
       print("GAME OVER")
       c = input("Nog een keer spelen?")
@@ -41,7 +42,7 @@ def beurt():
       else:
         print("Jawel")
         game()
-          
+            
     beurt() 
         
       
