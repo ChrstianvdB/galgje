@@ -64,6 +64,12 @@ def beurt():
       if c=="moo":
         print("https://www.youtube.com/watch?v=ELBVeRDflV0")
         game()
+      if c=="SIUUU":
+        print("https://www.youtube.com/shorts/QwSnhQaw0qk")
+      if c=="kermitsuicide":
+        print("https://www.youtube.com/watch?v=fGMViTfNPkQ")
+      if c=="noohe":
+        print("https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Pug_portrait.jpg/1200px-Pug_portrait.jpg")
       else:
         print("Jawel")
         game()
