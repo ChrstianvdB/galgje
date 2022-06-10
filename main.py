@@ -29,6 +29,8 @@ def beurt():
     if gekozenletter == "":
       print("Wel iets invullen he, -1 poging voor domheid")
       beurt()
+    if gekozenletter == "Suicide":
+      aantalbeurten = aantalbeurten - aantalbeurten
     gekozenletters.append(gekozenletter)  
     streepjes = []
     if gekozenletter ==gekozenwoord:
