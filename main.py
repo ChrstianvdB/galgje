@@ -25,10 +25,8 @@ def beurt():
     gekozenletter = input("kies een letter \n")  
     if gekozenletter == "SpelUitleg":
       print("Je weet het wel, -1 poging voor domheid")
-      beurt()
     if gekozenletter == "":
       print("Wel iets invullen he, -1 poging voor domheid")
-      beurt()
     if gekozenletter == "Suicide":
       aantalbeurten = aantalbeurten - aantalbeurten
     gekozenletters.append(gekozenletter)  
@@ -75,10 +73,12 @@ def beurt():
         game()
       if c=="SIUUU":
         print("https://www.youtube.com/shorts/QwSnhQaw0qk")
+        game()
       if c=="kermitsuicide":
         print("https://www.youtube.com/watch?v=fGMViTfNPkQ")
       if c=="noohe":
         print("https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Pug_portrait.jpg/1200px-Pug_portrait.jpg")
+        game()
       else:
         print("Jawel")
         game()
