@@ -8,7 +8,8 @@ gekozenwoord = ""
 def game():
   global aantalbeurten, gekozenwoord, gekozenletters
   
-  print("Welkom bij Galgje!") 
+  print("Welkom bij Galgje!")
+  print("type 'SpelUitleg' voor een uitleg van de regels")
     
   r = random.randint(1,10)
   gekozenwoord = woorden[r]
@@ -22,6 +23,12 @@ def beurt():
     print(f"Nog maar {aantalbeurten} pogingen!")
     aantalbeurten = aantalbeurten - 1
     gekozenletter = input("kies een letter \n")  
+    if gekozenletter == "SpelUitleg":
+      print("Je weet het wel, -1 poging voor domheid")
+      beurt()
+    if gekozenletter == "":
+      print("Wel iets invullen he, -1 poging voor domheid")
+      beurt()
     gekozenletters.append(gekozenletter)  
     streepjes = []
     if gekozenletter ==gekozenwoord:
